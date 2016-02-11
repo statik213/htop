@@ -16,7 +16,9 @@ in the source distribution for its full text.
 #include <stdlib.h>
 #include <string.h>
 #include <locale.h>
+#ifdef HAVE_LIBNCURSESW
 #include <langinfo.h>
+#endif
 
 #define ColorPair(i,j) COLOR_PAIR((7-i)*8+j)
 
